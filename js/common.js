@@ -1,3 +1,11 @@
+// ミラー用: 元サイトは <base href="サイトルート"> で JS 挿入の相対URLを解決していたため、
+// base 無しでも動くようスクリプト自身の URL からサイトルートを求める
+var MIRROR_SITE_ROOT = (function () {
+	var s = document.currentScript && document.currentScript.src;
+	if (!s) { var e = document.querySelector('script[src*="common.js"]'); s = e && e.src; }
+	return s ? s.slice(0, s.lastIndexOf('/js/') + 1) : '';
+})();
+
 $(function () {
 
 	/*
@@ -137,17 +145,17 @@ $(function () {
 	var next = $(".paging .pagination .next");
 	if(prev.children("a").length){
 		prev.children("a").text("");
-		prev.children("a").append('<img alt="prev" src="media/images/common/page_arrow_left.svg">');
+		prev.children("a").append('<img alt="prev" src="' + MIRROR_SITE_ROOT + 'media/images/common/page_arrow_left.svg">');
 	}else{
 		prev.text("");
-		prev.append('<img alt="prev" src="media/images/common/page_arrow_left.svg">');
+		prev.append('<img alt="prev" src="' + MIRROR_SITE_ROOT + 'media/images/common/page_arrow_left.svg">');
 	}
 	if(next.children("a").length){
 		next.children("a").text("");
-		next.children("a").append('<img alt="prev" src="media/images/common/page_arrow_right.svg">');
+		next.children("a").append('<img alt="prev" src="' + MIRROR_SITE_ROOT + 'media/images/common/page_arrow_right.svg">');
 	}else{
 		next.text("");
-		next.append('<img alt="prev" src="media/images/common/page_arrow_right.svg">');
+		next.append('<img alt="prev" src="' + MIRROR_SITE_ROOT + 'media/images/common/page_arrow_right.svg">');
 	}
 
 });

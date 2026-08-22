@@ -1,6 +1,14 @@
+// ミラー用: 元サイトは <base href="サイトルート"> で JS 生成の相対URLを解決していたため、
+// base 無しでも動くようスクリプト自身の URL からサイトルートを求める
+var MIRROR_SITE_ROOT = (function () {
+	var s = document.currentScript && document.currentScript.src;
+	if (!s) { var e = document.querySelector('script[src*="tag.js"]'); s = e && e.src; }
+	return s ? s.slice(0, s.lastIndexOf('/js/') + 1) : '';
+})();
+
 $(function() {
 
-	const isEnglish = location.pathname.indexOf('/en/') === 0
+	const isEnglish = location.pathname.indexOf('/en/') !== -1
 
 	// タグ
 	$('.item_tags ul.tags_list').each(function(){
@@ -20,7 +28,7 @@ $(function() {
 
 				// information 
 				for (let i=0; i<tagIds.length; i++) {
-					$(this).append('<li class="tagitem"><a href="' + (isEnglish ? 'en/' : '') + 'report/' + tag_page + '/tags/---tag-' + tagIds[i] + '.html">' + tagLabels[i] + '</a></li>');
+					$(this).append('<li class="tagitem"><a href="' + MIRROR_SITE_ROOT + (isEnglish ? 'en/' : '') + 'report/' + tag_page + '/tags/---tag-' + tagIds[i] + '.html">' + tagLabels[i] + '</a></li>');
 				}
 
 			} 
