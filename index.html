@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>組合せ遷移＠学術変革領域研究(B) HOME</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<base href="">
+		
+		<link href="css/Reset.css" type="text/css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap"  type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&display=swap" type="text/css" rel="stylesheet">
+<link href="css/common.css" type="text/css" rel="stylesheet">
+<link href="css/top.css" type="text/css" rel="stylesheet">
+<link href="css/_design.css" type="text/css" rel="stylesheet">
+<style>
+
+</style><link href="css/information_event_list.css" type="text/css" rel="stylesheet">
+<style>
+
+.sub_title >span {
+display: block;
+margin-bottom: 1%;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+
+.sub_title > .sub_title_main {
+padding-left: 0.7em;
+}
+
+.list_block .list.event ul li .list_col .topic_summary .event_content {
+display: inline;
+}
+
+@media screen and (max-width: 767px) {
+
+.list_block .list.event ul li .list_col .topic_summary .sub_title {
+display: block;
+padding-left: 9px;
+margin-left: 0;
+text-indent: 0;
+}
+
+.list_block .list.event ul li .list_col .topic_summary .sub_title > span {
+width: 100%;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+display: block;
+}
+
+.list_block .list.event ul li .list_col .topic_summary .sub_title > span > span:last-child {
+display: inline;
+}
+}
+</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0YEDEBEPL"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-J0YEDEBEPL');
+</script>
+		<script type="text/javascript" src="assets/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tag.js"></script><script>
+	//SP時の背景画像調整
+
+	$(function(){
+		//$(' .list_col .subtitle_item:has(.subtitle_content:empty)').hide();
+
+		function img_resize(){
+			var winW = $(window).width();
+			var sp = 767;
+
+			var visual_height = $('.main_visual').outerHeight(true);
+			var list_height = $('.list_block').outerHeight(true);
+			var img1_top_position = $('.list_block').position().top;
+			// var img1_bottom_position = $('.list_block').outerHeight(true);
+
+
+			if (winW <= sp) {
+				$('.top_page1.absolute_img').removeAttr('style');
+				var img1_top = parseInt($('.top_page1.absolute_img').css('top'));
+
+				$('.top_page1.absolute_img').css({
+					'top' : img1_top_position ,
+					'height':  list_height + 160,
+					'transform': 'translateY(20px)'
+				});
+
+				var img3_bottom = $('.links .link_title').height() / 2 ;
+				var img4_top = $('.links').outerHeight(true) ;
+
+				$('.top_page1.absolute_img').height(list_height + 20);
+				//	$('.top_page2.absolute_img').css('top',list_height + img1_top - 100);
+
+				$('.top_page3.absolute_img').css({
+					'top': list_height + img1_top + 300,
+					'bottom':  img4_top - img3_bottom
+				});
+
+			} else{
+
+				$('.top_page1.absolute_img').css({
+					'top' : img1_top_position ,
+					'height':  list_height + 80
+				});
+				//$('.top_page1.absolute_img').removeAttr('style');
+				// $('.top_page2.absolute_img').removeAttr('style');
+				$('.top_page3.absolute_img').removeAttr('style');
+
+
+			}
+		}
+		img_resize();
+
+		$(window).on('load resize', function() {
+			img_resize();
+		});
+
+
+		var type = $('.topic_type');
+		hide_empty(type,false);
+		
+		$('#event > li').each(function(){
+			
+		});
+	});
+
+</script>
+	</head>
+	<body>
+		<div id="wholewrapper" class="wholewrapper">
+			<header>
+	<div class="header_inner">
+		<a href="index.html">
+			<div class="header_logo">
+				<div class="pc"><img src="media/images/common/header_logo.png"></div>
+				<div class="sp"><a href="index.html"><img src="media/images/common/header_logo_sp.svg"></a></div>
+			</div>
+		</a>
+		<div class="sp">
+				<div class="hamburger sp" id="js-hamburger">
+					<span class="hamburger__line hamburger__line1"></span>
+					<span class="hamburger__line hamburger__line2"></span>
+				</div>
+			</div>
+		<nav>
+			<div class="gl_nav pc">
+
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm2  first "><a href="index.html" class="" >HOME</a></li><li class="type1 depth1 lm3   has_children"><a href="message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">代表挨拶</a><ul class="depth2"><li class="type1 depth2 lm70  first "><a href="message/202303/index.html" >2023年3月</a></li><li class="type1 depth2 lm69  last "><a href="message/202103/index.html" >2021年3月</a></li></ul></li><li class="type1 depth1 lm4   has_children"><a href="project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">プロジェクト</a><ul class="depth2"><li class="type1 depth2 lm6  first "><a href="project/project_summary.html" >研究プロジェクト概要</a></li><li class="type1 depth2 lm7   "><a href="project/project_a01/index.html" >A01班</a></li><li class="type1 depth2 lm8   "><a href="project/project_b01/index.html" >B01班</a></li><li class="type1 depth2 lm9  last "><a href="project/project_c01/index.html" >C01班</a></li></ul></li><li class="type1 depth1 lm5   has_children"><a href="report/information.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">活動情報</a><ul class="depth2"><li class="type1 depth2 lm18  first "><a href="report/information.html" >トピックス</a></li><li class="type1 depth2 lm16   "><a href="report/past-event/index.html" >イベントの記録</a></li><li class="type1 depth2 lm51  last "><a href="report/newsletter/index.html" >ニュースレター</a></li></ul></li><li class="type1 depth1 lm53  last has_children"><a href="report/information/detail/---id-500.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">主な成果</a><ul class="depth2"><li class="type3 depth2 lm54  first "><a href="report/information/detail/---id-500.html" class="" >最終報告書</a></li><li class="type3 depth2 lm56   "><a href="report/achievements/index.html" class="" >論文・受賞</a></li><li class="type3 depth2 lm57   "><a href="report/information/detail/---id-251.html" class="" >産学連携研究</a></li><li class="type3 depth2 lm77  last "><a href="report/information/detail/---id-501.html" class="" >研究用コンテンツ</a></li></ul></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+
+				<div class="language eng">
+					JP／<a href="en/index.html">EN</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<nav>
+		<div class="gl_nav sp" id="sp_nav">
+
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm2  first "><a href="index.html" class="" >HOME</a></li><li class="type1 depth1 lm3   has_children"><a href="message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">代表挨拶</a><ul class="depth2"><li class="type1 depth2 lm70  first "><a href="message/202303/index.html" >2023年3月</a></li><li class="type1 depth2 lm69  last "><a href="message/202103/index.html" >2021年3月</a></li></ul></li><li class="type1 depth1 lm4   has_children"><a href="project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">プロジェクト</a><ul class="depth2"><li class="type1 depth2 lm6  first "><a href="project/project_summary.html" >研究プロジェクト概要</a></li><li class="type1 depth2 lm7   "><a href="project/project_a01/index.html" >A01班</a></li><li class="type1 depth2 lm8   "><a href="project/project_b01/index.html" >B01班</a></li><li class="type1 depth2 lm9  last "><a href="project/project_c01/index.html" >C01班</a></li></ul></li><li class="type1 depth1 lm5   has_children"><a href="report/information.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">活動情報</a><ul class="depth2"><li class="type1 depth2 lm18  first "><a href="report/information.html" >トピックス</a></li><li class="type1 depth2 lm16   "><a href="report/past-event/index.html" >イベントの記録</a></li><li class="type1 depth2 lm51  last "><a href="report/newsletter/index.html" >ニュースレター</a></li></ul></li><li class="type1 depth1 lm53  last has_children"><a href="report/information/detail/---id-500.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">主な成果</a><ul class="depth2"><li class="type3 depth2 lm54  first "><a href="report/information/detail/---id-500.html" class="" >最終報告書</a></li><li class="type3 depth2 lm56   "><a href="report/achievements/index.html" class="" >論文・受賞</a></li><li class="type3 depth2 lm57   "><a href="report/information/detail/---id-251.html" class="" >産学連携研究</a></li><li class="type3 depth2 lm77  last "><a href="report/information/detail/---id-501.html" class="" >研究用コンテンツ</a></li></ul></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+
+				<div class="language eng">
+					JP／<a href="en/index.html">EN</a>
+				</div>
+			</div>	
+	</nav>
+</header>
+			<main id="main" class="main"><div>
+	<div class="main_visual">
+		<div class="text_img">
+			<img alt="組合せ遷移の展開に向けた計算機科学・工学・数学によるアプローチの融合" class="pc" src="media/images/top/text.svg" /> <img alt="組合せ遷移の展開に向けた計算機科学・工学・数学によるアプローチの融合" class="sp" src="media/images/top/text_sp.svg" />
+			<p>科学研究費助成事業&nbsp;学術変革領域研究(B) 2020-2022年度</p>
+		</div>
+	</div>
+
+	<div class="main_visual_img absolute_img">
+		<img alt="mein_visual" class="pc" src="media/images/top/main_visual.jpg" /> <img alt="mein_visual" class="sp" src="media/images/top/main_visual_sp.jpg" />
+	</div>
+
+	<div class="top_page1 absolute_img">
+		&nbsp;
+	</div>
+
+	<div class="top_page2 absolute_img">
+		&nbsp;
+	</div>
+
+	<div class="top_page3 absolute_img">
+		&nbsp;
+	</div>
+
+	<div class="top_page4 absolute_img">
+		&nbsp;
+	</div>
+
+	<div class="list_block">
+		<div class="list">
+			<div class="list_title">
+				<h2 class="eng">Selected Information</h2>
+				<a href="report/information.html"><img class="pc" src="media/images/top/list.svg" /><img class="sp" src="media/images/top/list_sp.svg" />記事一覧</a> <!--<div class="slash">
+  &nbsp;
+ </div>-->
+			</div>
+			<ul class="info" id="information"><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-500.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2024.02.26
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">お知らせ</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary">
+					「最終報告書」を公開	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="" data-tag=""></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-501.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2024.02.26
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">お知らせ</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary">
+					「研究用コンテンツ」を取りまとめました	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="" data-tag=""></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-517.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2023.10.30
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">お知らせ</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary">
+					国際プログラミング競技会 CoRe Challenge 2023 の結果発表とarXiv掲載	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="15,42" data-tag="お知らせ,2023年度"></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-515.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2023.07.01
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">お知らせ</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary">
+					日本オペレーションズ・リサーチ学会機関誌 68巻7号 に特集「組合せ遷移の世界」掲載	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="15,42" data-tag="お知らせ,2023年度"></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-267.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2023.06.13
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">お知らせ</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary">
+					国際会議 ICALP 2023 にて「組合せ遷移」のワークショップを開催（2023.07.10, Paderborn, Germany）	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="42,15" data-tag="2023年度,お知らせ"></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-266.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2023.03.20
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">お知らせ</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary">
+					2023.02.21開催「組合せ遷移」最終報告会の模様（スライド資料＋講演動画）を公開しました	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="27,15" data-tag="2022年度,お知らせ"></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="media/files/_u/topic/file/28r037yju9.pdf" target=&quot;_blank&quot;>
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2023.03.20
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">お知らせ</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary">
+					「CoRe Newsletter」第5号発行	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="17,27" data-tag="ニュースレター,2022年度"></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-251.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2022.11.07
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">お知らせ</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary">
+					【共同プレスリリース】停電復旧の最短手順を算出するアルゴリズムを開発 ー多段融通にも対応、より広域な配電運用への活用に期待ー	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="15,24,26,27" data-tag="お知らせ,A01,B01,2022年度"></ul>
+		</div>
+	</div>
+</li></ul>
+		</div>
+	</div>
+
+	<div>
+		<div class="project semi_inner">
+			<div class="title">
+				<h2 class="eng">Project</h2>
+			</div>
+
+			<div class="sub_title">
+				<h3>組合せ遷移の展開に向けた<br class="sp" />
+				計算機科学・工学・数学による<br class="sp" />
+				アプローチの融合</h3>
+			</div>
+
+			<div class="description_block">
+				<div>
+					<div class="description_text">
+						本研究領域の大目標は，研究でも実務でも障壁なく，組合せ遷移のアルゴリズム技術を利活用するための共通基盤を構築することである．その実現に向け，計算機科学・工学・数学の三分野を背景とする研究者らが協働し，組合せ遷移のアルゴリズム基盤，実装技術基盤，数学基盤の構築を目指す．
+					</div>
+					<a href="project/project_summary.html">
+					<div class="description_link">
+						<div class="link_block">
+							<img src="media/images/top/arrow_right_w.svg" />
+						</div>
+
+						<div class="link_text">
+							研究プロジェクト概要
+						</div>
+					</div>
+					</a>
+				</div>
+
+				<div class="description_img">
+					<img src="media/images/top/image.jpg" />
+				</div>
+			</div>
+			<ul class="group_summary">
+
+	<li class="group group_a">
+		<a href="project/project_a01/index.html">
+			<div class="group_head">
+				<div>
+					<div class="group_text eng">group</div>
+
+					<div class="group_num eng ">A01</div>
+				</div>
+
+				<div class="group_line">&nbsp;</div>
+			</div>
+
+			<div class="group_about">
+				<p>計算機科学アプローチによる<br />
+					組合せ遷移の展開</p>
+
+				<p>アルゴリズムの自動生成に向けて</p>
+			</div>
+
+			<div>
+				<div class="link_block"><img src="media/images/top/arrow_right_w.svg" /></div>
+
+
+				<div class="group_icon"><img src="media/images/top/noun_computer%20science_2475084.svg" /></div>
+			</div>
+		</a>
+	</li>
+	<li class="group group_b">
+		<a href="project/project_b01/index.html">
+			<div class="group_head">
+				<div>
+					<div class="group_text eng">group</div>
+
+					<div class="group_num eng">B01</div>
+				</div>
+
+				<div class="group_line">&nbsp;</div>
+			</div>
+
+			<div class="group_about">
+				<p>工学アプローチによる<br/>
+					組合せ遷移の展開</p>
+
+				<p>配電切替を足がかりとして<br class="pc"/>
+					汎用ソルバーへ</p>
+			</div>
+
+
+			<div>
+				<div class="link_block"><img src="media/images/top/arrow_right_w.svg" /></div>
+
+
+				<div class="group_icon"><img src="media/images/top/noun_Big%20data_2486352.svg" /></div>
+			</div>
+		</a>
+	</li>
+	<li class="group group_c">
+		<a href="project/project_c01/index.html">
+			<div class="group_head">
+				<div>
+					<div class="group_text eng">group</div>
+
+					<div class="group_num eng">C01</div>
+				</div>
+
+				<div class="group_line">&nbsp;</div>
+			</div>
+
+			<div class="group_about">
+				<p>数学アプローチによる<br />
+					組合せ遷移の展開</p>
+
+				<p>活用事例を手がかりとして<br  class="pc"/>
+					新解法へ</p>
+			</div>
+			<div>
+				<div class="link_block"><img src="media/images/top/arrow_right_w.svg" /></div>
+				<div class="group_icon"><img src="media/images/top/noun_mathematics_2475103.svg" /></div>
+			</div>
+		</a>
+	</li>
+</ul>
+
+		</div>
+	</div>
+
+	<div class="links inner">
+		<div class="link_title">
+			<h2 class="eng">Links</h2>
+		</div>
+
+		<ul class="link_list">
+			<li><a href="https://www.mext.go.jp/a_menu/shinkou/hojyo/main5_a5.htm" target="_blank">
+			<div>
+				文部科学省
+			</div>
+			</a></li>
+			<li><a href="https://www.jsps.go.jp/j-grantsinaid/" target="_blank">
+			<div>
+				日本学術振興会
+			</div>
+			</a></li>
+			<li><a href="http://www.ecei.tohoku.ac.jp/alg/core/" target="_blank">
+			<div>
+				CoRe Portal
+			</div>
+			</a></li>
+			<li><a href="http://www.ecei.tohoku.ac.jp/alg/coresurvey/" target="_blank">
+			<div>
+				CoRe Web Survey
+			</div>
+			</a></li>
+		</ul>
+	</div>
+</div>
+</main>
+			<footer>
+	<div class="footer_inner">
+		<div class="logo_contact">
+			<div class="footer_logo">
+				<img src="media/images/common/footer_logo.svg">
+			</div>
+			<div class="contact">
+				<div class="footer_name">
+					組合せ遷移＠学術変革領域研究(B) 
+				</div>
+				<div class="contact_mail">
+					<a href="index.html#" data-host="grp.tohoku.ac.jp" data-account="core.info" class="icon_mail">@</a>
+				</div>
+			</div>
+		</div>
+		<div class="fotter-menu pc">
+
+			<div>
+				<h5><a href="index.html">HOME</a></h5>
+			</div>
+			<div>
+				<h5><a href="message/202303/index.html">代表挨拶</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm70  first "><a href="message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">2023年3月</a></li><li class="type1 depth1 lm69  last "><a href="message/202103/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">2021年3月</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="project/project_summary.html">プロジェクト</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm6  first "><a href="project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">研究プロジェクト概要</a></li><li class="type1 depth1 lm7   "><a href="project/project_a01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">A01班</a></li><li class="type1 depth1 lm8   "><a href="project/project_b01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">B01班</a></li><li class="type1 depth1 lm9  last "><a href="project/project_c01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">C01班</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="report/information.html">活動情報</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm18  first "><a href="report/information.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">トピックス</a></li><li class="type1 depth1 lm16   "><a href="report/past-event/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">イベントの記録</a></li><li class="type1 depth1 lm51  last "><a href="report/newsletter/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">ニュースレター</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="report/information/detail/---id-500.html">主な成果</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm54  first "><a href="report/information/detail/---id-500.html" class="" >最終報告書</a></li><li class="type3 depth1 lm56   "><a href="report/achievements/index.html" class="" >論文・受賞</a></li><li class="type3 depth1 lm57   "><a href="report/information/detail/---id-251.html" class="" >産学連携研究</a></li><li class="type3 depth1 lm77  last "><a href="report/information/detail/---id-501.html" class="" >研究用コンテンツ</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+
+			
+		</div>
+	</div>
+	<a class="twitter link_button" href="https://twitter.com/comb_reconf" target="_blank">
+		<div>
+			<img src="media/images/common/Twitter.svg" alt="Page_Top">
+		</div>
+	</a>
+	<a id="top" class="top link_button" href="index.html#wholewrapper">
+		<div>
+			<img src="media/images/common/Page_Top.svg" alt="Page_Top">
+		</div>
+	</a>
+</footer>
+		</div>
+	<div class="nocache" style="display:none;">no cache</div></body>
+</html>

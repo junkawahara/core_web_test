@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			
+		<title>Workshop "Combinatorial Reconfiguration and Fixed-Parameter Tractability"| KAKENHI Grant-in-Aid for Transformative Research Areas (B)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<base href="">
+		<link href="../../../../css/Reset.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://core.dais.is.tohoku.ac.jp/assets/font-awesome/css/font-awesome.min.css">
+<style>
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap"  type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&display=swap" type="text/css" rel="stylesheet">
+<link href="../../../../css/common.css" type="text/css" rel="stylesheet">
+<link href="../../../../css/lower.css" type="text/css" rel="stylesheet">
+<link href="../../../../css/adjustment_en_lower.css" type="text/css" rel="stylesheet"><link href="../../../../css/information_event_list.css" type="text/css" rel="stylesheet">
+		<script src="../../../../assets/jquery.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0YEDEBEPL"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-J0YEDEBEPL');
+</script>
+	</head>
+	<body class="en report detail eng">
+		<div id="wholewrapper" class="wholewrapper">
+			<header class="eng">
+	<div class="header_inner">
+		<a href="../../../index.html">
+			<div class="header_logo">
+				<div class="pc"><img src="../../../../media/images/common/header_logo.png"></div>
+				<div class="sp"><a href="../../../index.html"><img src="../../../../media/images/common/header_logo_sp.svg"></a></div>
+			</div>
+		</a>
+		<div class="sp">
+				<div class="hamburger sp" id="js-hamburger">
+					<span class="hamburger__line hamburger__line1"></span>
+					<span class="hamburger__line hamburger__line2"></span>
+				</div>
+			</div>
+		<nav>
+			<div class="gl_nav pc">
+
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm11  first "><a href="../../../index.html" class="" >Home</a></li><li class="type1 depth1 lm12   has_children"><a href="../../../message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Message</a><ul class="depth2"><li class="type1 depth2 lm71  first "><a href="../../../message/202303/index.html" >March 2023</a></li><li class="type1 depth2 lm72  last "><a href="../../../message/202103/index.html" >March 2021</a></li></ul></li><li class="type1 depth1 lm13   has_children"><a href="../../../project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Project</a><ul class="depth2"><li class="type1 depth2 lm20  first "><a href="../../../project/project_summary.html" >Mission of the Project</a></li><li class="type1 depth2 lm21   "><a href="../../../project/group_a01/index.html" >group A01</a></li><li class="type1 depth2 lm22   "><a href="../../../project/group_b01/index.html" >group B01</a></li><li class="type1 depth2 lm23  last "><a href="../../../project/group_c01/index.html" >group C01</a></li></ul></li><li class="type1 depth1 lm14 active  has_children"><a href="../../information/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Activities</a><ul class="depth2"><li class="type1 depth2 lm30  first "><a href="../../information/index.html" >Topics</a></li><li class="type1 depth2 lm28 active last "><a href="../index.html" >Events Records</a></li></ul></li><li class="type1 depth1 lm63  last has_children"><a href="../../achievements/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Achievements</a><ul class="depth2"><li class="type3 depth2 lm64  first "><a href="../../achievements/index.html" class="" >Publications &amp; Awards</a></li><li class="type3 depth2 lm68   "><a href="../../information/detail/---id-254.html" class="" >Industry-Academia Research</a></li><li class="type3 depth2 lm78  last "><a href="../../information/detail/---id-504.html" class="" >Research Materials</a></li></ul></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+
+				<div class="language">
+					<a href="../../../../index.html">JP</a>／EN
+				</div>
+			</div>
+		</nav>
+	</div>
+	<nav>
+		<div class="gl_nav sp" id="sp_nav">
+
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm11  first "><a href="../../../index.html" class="" >Home</a></li><li class="type1 depth1 lm12   has_children"><a href="../../../message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Message</a><ul class="depth2"><li class="type1 depth2 lm71  first "><a href="../../../message/202303/index.html" >March 2023</a></li><li class="type1 depth2 lm72  last "><a href="../../../message/202103/index.html" >March 2021</a></li></ul></li><li class="type1 depth1 lm13   has_children"><a href="../../../project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Project</a><ul class="depth2"><li class="type1 depth2 lm20  first "><a href="../../../project/project_summary.html" >Mission of the Project</a></li><li class="type1 depth2 lm21   "><a href="../../../project/group_a01/index.html" >group A01</a></li><li class="type1 depth2 lm22   "><a href="../../../project/group_b01/index.html" >group B01</a></li><li class="type1 depth2 lm23  last "><a href="../../../project/group_c01/index.html" >group C01</a></li></ul></li><li class="type1 depth1 lm14 active  has_children"><a href="../../information/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Activities</a><ul class="depth2"><li class="type1 depth2 lm30  first "><a href="../../information/index.html" >Topics</a></li><li class="type1 depth2 lm28 active last "><a href="../index.html" >Events Records</a></li></ul></li><li class="type1 depth1 lm63  last has_children"><a href="../../achievements/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Achievements</a><ul class="depth2"><li class="type3 depth2 lm64  first "><a href="../../achievements/index.html" class="" >Publications &amp; Awards</a></li><li class="type3 depth2 lm68   "><a href="../../information/detail/---id-254.html" class="" >Industry-Academia Research</a></li><li class="type3 depth2 lm78  last "><a href="../../information/detail/---id-504.html" class="" >Research Materials</a></li></ul></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+
+				<div class="language eng">
+					<a href="https://core.dais.is.tohoku.ac.jp/test-x/">JP</a>／EN
+				</div>
+			</div>	
+	</nav>
+</header>
+
+			<section class="main_wrap">
+				<section class="page_title">
+					<div class="page_title_inner">
+						<div class="page_title_navigation"><span>Information</span></div>
+						<h2 class= "page_title_main">Event Records</h2>
+					</div>
+				</section>
+				<div class="contents_wrap">
+					<div class="main_inner width_">
+						<main id="main" class="main ">
+							<section class="event_detail">
+<div class="base_wh acc_slash">
+	<article class="event_detail_inner">
+	<h3 class="title--h3">Workshop "Combinatorial Reconfiguration and Fixed-Parameter Tractability"</h3>
+
+	<div class="event_sub_title">
+		
+	</div>
+
+	<table class="table event_table">
+		<tbody>
+			<tr>
+				<th>Date and time:&nbsp;</th>
+				<td>2022.12.12 Mon.
+				<div class="event_tag">
+					
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<th>Venue:&nbsp;</th>
+				<td>Online  (Free of charge)</td>
+			</tr>
+			<tr>
+				<th>Speaker:&nbsp;</th>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Title:&nbsp;</th>
+				<td></td>
+			</tr>
+			<tr class="event_contents">
+				<th>Summary:&nbsp;</th>
+				<td><div>As a part of the research project &quot;<a href="../../../index.html" target="_blank">Fusion of Computer Science, Engineering and Mathematics Approaches for Expanding Combinatorial Reconfiguration</a>&quot; (head investigator: <a href="http://www.dais.is.tohoku.ac.jp/take/" target="_blank">Takehiro Ito</a>), we are going to organize Workshop &quot;Combinatorial Reconfiguration and Fixed-Parameter Tractability&quot; via Zoom on December 12, 2022 (based on European Timezone).</div>
+
+<div><br />
+The objective is to learn recent developments of fixed-parameter (in)tractability and their relations with combinatorial reconfiguration. In her influential survey paper <a href="https://doi.org/10.3390/a11040052" target="_blank">&quot;Introduction to Combinatorial Reconfiguration&quot; (Algorithms 2018)</a>, Naomi Nishimura dedicated one section to applications of the parameterized complexity methodology to problems on combinatorial reconfiguration. Indeed, several papers have been presented along this line of research. Furthermore, the research activity on fixed-parameter (in)tractability has been quite active, and there are a lot of recently introduced methods that are waiting for being applied to combinatorial reconfiguration. In this workshop, we will learn recent research trends of fixed-parameter tractability and combinatorial reconfiguration, and will discuss a new connection between these two fields of theoretical computer science.</div>
+
+<div>&nbsp;</div>
+
+<div>This workshop aims at the broad audience of discrete mathematics and theoretical computer science, who wish to learn and work on these&nbsp;active research areas.</div>
+
+<div>&nbsp;</div>
+
+<div>The program will be exclusively composed of invited talks. Each talk is planned to span one hour, including discussion.</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:18px;"><strong><span style="font-family:游ゴシック">List of Confirmed Invited Speakers</span></strong></span></div>
+
+<ul style="margin-left: 40px;">
+	<li><a href="https://webspace.science.uu.nl/~bodla101/" target="_blank">Hans L. Bodlaender</a>&nbsp;(Utrecht University, the Netherlands)</li>
+	<li><a href="https://www.win.tue.nl/~bjansen/" target="_blank">Bart M. P. Jansen</a> (Eindhoven University of Technology, the Netherlands)</li>
+	<li><a href="https://www.lamsade.dauphine.fr/~kim/" target="_blank">Eun Jung Kim</a> (Paris-Dauphine University, France)</li>
+	<li><a href="https://pagesperso.g-scop.grenoble-inp.fr/moritzmuhlenthaler/" target="_blank">Moritz M&uuml;hlenthaler</a> (Universit&eacute; Grenoble Alpes,&nbsp;France)</li>
+	<li><a href="https://sites.google.com/view/sakethome" target="_blank">Saket Saurabh</a> (The Institute of Mathematical Sciences, India)<br />
+	&nbsp;</li>
+</ul>
+
+<div>
+<div><span style="font-size:18px;"><strong><span style="font-family:游ゴシック">Registration</span></strong></span></div>
+
+<div style="margin-left: 40px;">Registration is free of charge, but please <a href="https://uec-tokyo.zoom.us/meeting/register/tZIsdeqpqTIpG9Jfmaz-P6dqKjVA85BBd7Uq" target="_blank">make your registration in advance</a>.&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>
+<div><span style="font-size:18px;"><strong><span style="font-family:游ゴシック">Program</span></strong></span></div>
+
+<div style="margin-left: 40px;">2022.12.12 Mon.&nbsp; CET (JST)</div>
+
+<div style="margin-left: 40px;">
+<table border="0" cellpadding="0" cellspacing="0" style="width:678px;">
+	<tbody>
+		<tr>
+			<td style="width: 185px;">08:55-09:00 (16:55-17:00)</td>
+			<td style="width: 486px;">Welcome address</td>
+		</tr>
+		<tr>
+			<td style="width: 185px;">09:00-10:00 (17:00-18:00)</td>
+			<td style="width: 486px;">
+			<div><a href="https://www.lamsade.dauphine.fr/~kim/" target="_blank">Eun Jung Kim</a> (Paris-Dauphine University, France)</div>
+
+			<div>Twin-Width and Its Implications</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 185px;">10:15-11:15 (18:15-19:15)</td>
+			<td style="width: 486px;">
+			<div><a href="https://pagesperso.g-scop.grenoble-inp.fr/moritzmuhlenthaler/" target="_blank">Moritz M&uuml;hlenthaler</a> (Universit&eacute; Grenoble Alpes,&nbsp;France)</div>
+
+			<div>Constraint Satisfaction Reconfiguration</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 185px;">11:15-13:00 (19:15-21:00)</td>
+			<td style="width: 486px;">Lunch/Dinner Break</td>
+		</tr>
+		<tr>
+			<td style="width: 185px;">13:00-14:00 (21:00-22:00)</td>
+			<td style="width: 486px;">
+			<div><a href="https://sites.google.com/view/sakethome" target="_blank">Saket Saurabh</a> (The Institute of Mathematical Sciences, India)</div>
+
+			<div>FPT Approximation Schemes for the Maximum Coverage and MAX-SAT Problem</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 185px;">14:15-15:15 (22:15-23:15)</td>
+			<td style="width: 486px;">
+			<div><a href="https://www.win.tue.nl/~bjansen/" target="_blank">Bart M. P. Jansen</a> (Eindhoven University of Technology, the Netherlands)</div>
+
+			<div>Search Space Reduction Beyond Kernelization</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 185px;">15:30-16:30 (23:30-24:30)</td>
+			<td style="width: 486px;">
+			<div><a href="https://webspace.science.uu.nl/~bodla101/" target="_blank">Hans L. Bodlaender</a> (Utrecht University, the Netherlands)</div>
+
+			<div>Parameterized Complexity of Reconfiguration of Small Independent Sets and Dominating Sets</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>&nbsp;</div>
+</div>
+</div>
+
+<div>
+<div><span style="font-size:18px;"><strong><span style="font-family:游ゴシック">Talk Titles and Abstracts</span></strong></span></div>
+
+<div>
+<ul style="margin-left: 40px;">
+	<li>09:00-10:00 (17:00-18:00)</li>
+</ul>
+
+<div style="margin-left: 40px;"><a href="https://www.lamsade.dauphine.fr/~kim/" target="_blank">Eun Jung Kim</a> (Paris-Dauphine University, France)</div>
+
+<div style="margin-left: 40px;"><u>Title</u>:&nbsp;Twin-Width and Its Implications</div>
+
+<div>
+<div style="margin-left: 40px;"><u>Abstract</u>:&nbsp;First Order Logic (FO logic) expresses many classic computational problems such as k-Independent Set problem with variables and logical connectives. First Order model checking is known to be fixed-parameter tractable on important classes such as nowhere dense classes, bounded rank-width graphs, unit interval graphs as well as strict hereditary classes of permutations. A notion called twin-width, introduced by Bonnet, Kim, Thomass&eacute;, Watrigant (FOCS 2020), elegantly captures vast swathes of such classes, and provides a new perspective to explain why so many computational problems are fixed-parameter tractable on graph classes seemlying so different. We will briefly sketch the new notion, and its rapidly developing impact in theoretical computer science with an emphasis on algorithm designs.</div>
+
+<div style="margin-left: 40px;">&nbsp;</div>
+
+<div>
+<ul style="margin-left: 40px;">
+	<li>10:15-11:15 (18:15-19:15)</li>
+</ul>
+
+<div style="margin-left: 40px;"><a href="https://pagesperso.g-scop.grenoble-inp.fr/moritzmuhlenthaler/" target="_blank">Moritz M&uuml;hlenthaler</a> (Universit&eacute; Grenoble Alpes,&nbsp;France)</div>
+
+<div>
+<div style="margin-left: 40px;"><u>Title</u>:&nbsp;Constraint Satisfaction Reconfiguration</div>
+
+<div>
+<div style="margin-left: 40px;"><u>Abstract</u>:&nbsp;The constraint satisfaction problem (CSP) asks for an assignment of&nbsp;values to variables such that given constraints are satisfied. Special&nbsp;cases of the CSP are for example graph coloring and Boolean&nbsp;satisfiability. We consider the following reconfiguration variant of&nbsp;the CSP: given two feasible solutions of a CSP instance, can we&nbsp;transform one solution into the other by changing the value of a&nbsp;single variable at a time, such that in each step the constraints are&nbsp;satisfied? We give an overview of what is known about the complexity&nbsp;of this question and highlight the techniques behind recent&nbsp;algorithmic results.</div>
+
+<div>&nbsp;</div>
+
+<div>
+<ul style="margin-left: 40px;">
+	<li>13:00-14:00 (21:00-22:00)</li>
+</ul>
+
+<div style="margin-left: 40px;"><a href="https://sites.google.com/view/sakethome" target="_blank">Saket Saurabh</a> (The Institute of Mathematical Sciences, India)</div>
+
+<div>
+<div style="margin-left: 40px;"><u>Title</u>:&nbsp;FPT Approximation Schemes for the Maximum Coverage and MAX-SAT Problem</div>
+
+<div>
+<div style="margin-left: 40px;"><u>Abstract</u>:&nbsp;Vertex Cover is a classical NP-hard problem. Partial Vertex Cover is a variant of the Vertex Cover problem where the goal is to maximize the number of edges covered, given a fixed number of vertices that can be used. Partial Vertex Cover is a W[1]-hard problem. There are FPT approximation schemes for Partial Vertex Cover parameterized by the solution size, i.e., &nbsp;there are $(1-\epsilon)$-factor approximation algorithms running in time $f(k,\epsilon) n^{O(1)}$ for all $0&lt;\epsilon&lt;1$. In this talk, we consider the Partial Vertex Cover problem and SAT&nbsp;problems in hypergraphs where there is no bound on the size of the hyperedges. We design an FPT approximation scheme for these problems on hypergraphs that satisfies the Kij-free property, i.e., no $i$ vertices are contained in $j$ common hyperedges.&nbsp;</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+
+<div>
+<ul style="margin-left: 40px;">
+	<li>14:15-15:15 (22:15-23:15)</li>
+</ul>
+
+<div style="margin-left: 40px;"><a href="https://www.win.tue.nl/~bjansen/" target="_blank">Bart M. P. Jansen</a> (Eindhoven University of Technology, the Netherlands)</div>
+
+<div style="margin-left: 40px;"><u>Title</u>:&nbsp;Search Space Reduction Beyond Kernelization</div>
+
+<div style="margin-left: 40px;"><u>Abstract</u>:&nbsp;The framework of kernelization gives a mathematical model for the rigorous analysis of preprocessing, aimed at showing that any instance with parameter k can efficiently be reduced to an equivalent one whose size depends only on k. Kernelization serves as a useful tool to obtain FPT algorithms, since any brute-force algorithm solves the reduced instance in time depending only on k. However, from the definition of kernelization it is not clear why kernelization would lead to significant speed-ups when the reduced instance is not solved by brute force, but by a fixed-parameter tractable algorithm whose running time is governed by the value of the parameter. To speed up such algorithms, it is the parameter controlling the size of the search space which should decrease, rather than the encoding size of the input. The discrepancy between reducing the instance size versus decreasing the search space is the focus of this talk. The quest for preprocessing algorithms that reduce the search space leads to a new type of algorithmic and graph-theoretical questions. The talk gives an introduction to this budding line of inquiry by presenting examples from recent work on the search for essential vertices and antler structures in graphs.<br />
+Based on joint work with Benjamin M. Bumpus, Huib Donkers, and Jari J.H. de Kroon.</div>
+
+<div>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<ul style="margin-left: 40px;">
+	<li>15:30-16:30 (23:30-24:30)</li>
+</ul>
+
+<div style="margin-left: 40px;"><a href="https://webspace.science.uu.nl/~bodla101/" target="_blank">Hans L. Bodlaender</a> (Utrecht University, the Netherlands)</div>
+
+<div style="margin-left: 40px;"><u>Title</u>:&nbsp;Parameterized Complexity of Reconfiguration of Small Independent Sets and Dominating Sets</div>
+
+<div style="margin-left: 40px;"><u>Abstract</u>:&nbsp;In this talk, we look at the complexity of reconfiguring independent or dominating sets, where we assume that the size of the sets is a small parameter k, under different rules of moving the &quot;tokens&quot;. It appears that the parameterized complexity depends on the assumption of how the number of moves that can be made is specified, but less on the type of moves.<br />
+Some related literature is also reviewed.</div>
+
+<div>
+<div>&nbsp;</div>
+
+<ul style="margin-left: 40px;">
+</ul>
+</div>
+</div>
+
+<div>
+<div><span style="font-size:18px;"><strong><span style="font-family:游ゴシック">Organizers</span></strong></span></div>
+</div>
+</div>
+
+<ul style="margin-left: 40px;">
+	<li><a href="http://www.dais.is.tohoku.ac.jp/take/" target="_blank">Takehiro Ito</a>&nbsp;(Tohoku University, Japan)</li>
+	<li><a href="http://dopal.cs.uec.ac.jp/okamotoy/" target="_blank">Yoshio Okamoto</a>&nbsp;(The University of Electro-Communications, Japan)</li>
+	<li><a href="https://www.math.mi.i.nagoya-u.ac.jp/~otachi/" target="_blank">Yota Otachi</a>&nbsp;(Nagoya University, Japan)</li>
+</ul>
+
+<div>&nbsp;</div>
+</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="event_release_date">
+		Update:2022.10.15
+	</div>
+
+	<div class="event_tag">
+		<ul class="">
+            <li>
+                            <a href="../tags/---tag-15.html">FY2022</a>
+                    </li>
+            <li>
+                            <a href="../tags/---tag-4.html">Symposium</a>
+                    </li>
+    </ul>
+
+	</div>
+	</article>
+
+	<div class="button--wh rev">
+		<a href="../index.html">BACK</a>
+	</div>
+</div>
+</section>
+
+<div style="display: none">
+	
+</div>
+
+						</main>
+					</div>
+				</div>
+			</section>
+			<nav class="localnavi">
+				<div class="localnavi_inner">
+					<!--Qrt\Plugin\LocalNavigation::loadPlugin--><h2 class="top_title"><a href="../../information/index.html">Activities</a></h2><ul class="depth1"><li class="type1 depth1 lm30  first "><a href="../../information/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Topics</a></li><li class="type1 depth1 lm28 active last "><a href="../index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Events Records</a></li></ul><!--/Qrt\Plugin\LocalNavigation::loadPlugin-->
+				</div>
+			</nav>
+			<footer class="eng">
+	<div>
+		<div class="logo_contact">
+			<div class="footer_logo">
+				<img src="../../../../media/images/common/footer_logo.svg">
+			</div>
+			<div class="contact">
+				<div>
+					KAKENHI Grant-in-Aid for Transformative Research Areas (B)
+				</div>
+				<div class="contact_mail">
+					<a href="../../../../index.html#" data-host="grp.tohoku.ac.jp" data-account="core.info" class="icon_mail">@</a>
+				</div>
+			</div>
+		</div>
+		<div class="fotter-menu pc">
+
+			<div>
+				<h5><a href="../../../index.html">Home</a></h5>
+			</div>
+			<div>
+				<h5><a href="../../../message/202303/index.html">Message</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm71  first "><a href="../../../message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">March 2023</a></li><li class="type1 depth1 lm72  last "><a href="../../../message/202103/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">March 2021</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="../../../project/project_summary.html">Project</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm20  first "><a href="../../../project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Mission of the Project</a></li><li class="type1 depth1 lm21   "><a href="../../../project/group_a01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">group A01</a></li><li class="type1 depth1 lm22   "><a href="../../../project/group_b01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">group B01</a></li><li class="type1 depth1 lm23  last "><a href="../../../project/group_c01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">group C01</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="../../information/index.html">Activities</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm30  first "><a href="../../information/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Topics</a></li><li class="type1 depth1 lm28 active last "><a href="../index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Events Records</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="../../achievements/index.html">Achievements</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm64  first "><a href="../../achievements/index.html" class="" >Publications &amp; Awards</a></li><li class="type3 depth1 lm68   "><a href="../../information/detail/---id-254.html" class="" >Industry-Academia Research</a></li><li class="type3 depth1 lm78  last "><a href="../../information/detail/---id-504.html" class="" >Research Materials</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+	
+			
+		</div>
+	</div>
+	<a class="twitter link_button" href="https://twitter.com/comb_reconf" target="_blank">
+		<div>
+			<img src="../../../../media/images/common/Twitter.svg" alt="Page_Top">
+		</div>
+	</a>
+	<a id="top" class="top link_button" href="../../../../index.html#wholewrapper">
+		<div>
+			<img src="../../../../media/images/common/Page_Top.svg" alt="Page_Top">
+		</div>
+	</a>
+</footer>
+<!-- core -->
+		</div>
+	<div class="nocache" style="display:none;">no cache</div></body>
+	<script type="text/javascript" src="../../../../assets/jquery.js"></script>
+<script type="text/javascript" src="../../../../js/common.js"></script>
+<script type="text/javascript" src="../../../../js/tag.js"></script><script>
+	$(function(){
+		$('#main .event_table tr:has(td:empty)').hide();
+	});
+</script>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="plus" transform="translate(-44 -39)">
+    <rect id="line" width="32" height="4" transform="translate(44 53)" fill="#2b2c31"/>
+    <rect id="line-2" data-name="line" width="32" height="4" transform="translate(62 39) rotate(90)" fill="#2b2c31"/>
+  </g>
+</svg>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Fusion of Computer Science, Engineering and Mathematics Approaches for Expanding Combinatorial Reconfiguration</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<base href="">
+		
+		<link href="../css/Reset.css" type="text/css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap"  type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&display=swap" type="text/css" rel="stylesheet">
+<link href="../css/common.css" type="text/css" rel="stylesheet">
+<link href="../css/top.css" type="text/css" rel="stylesheet">
+<link href="../css/_design.css" type="text/css" rel="stylesheet">
+<link href="../css/adjustment_en_top.css" type="text/css" rel="stylesheet"><link href="../css/information_event_list.css" type="text/css" rel="stylesheet">
+<style>
+
+.sub_title >span {
+display: block;
+margin-bottom: 1%;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+
+.sub_title > .sub_title_main {
+padding-left: 0.7em;
+}
+
+.list_block .list.event ul li .list_col .topic_summary .event_content {
+display: inline;
+}
+
+@media screen and (max-width: 767px) {
+
+.list_block .list.event ul li .list_col .topic_summary .sub_title {
+display: block;
+padding-left: 9px;
+margin-left: 0;
+text-indent: 0;
+}
+
+.list_block .list.event ul li .list_col .topic_summary .sub_title > span {
+width: 100%;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+display: block;
+}
+
+.list_block .list.event ul li .list_col .topic_summary .sub_title > span > span:last-child {
+display: inline;
+}
+}
+</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0YEDEBEPL"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-J0YEDEBEPL');
+</script>
+		<script type="text/javascript" src="../assets/jquery.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tag.js"></script><script>
+	//SP時の背景画像調整
+
+	$(function(){
+
+
+		function img_resize(){
+			var winW = $(window).width();
+			var sp = 767;
+
+			var visual_height = $('.main_visual').outerHeight(true);
+			var list_height = $('.list_block').outerHeight(true);
+			var img1_top_position = $('.list_block').position().top;
+			// var img1_bottom_position = $('.list_block').outerHeight(true);
+
+
+			if (winW <= sp) {
+				$('.top_page1.absolute_img').removeAttr('style');
+				var img1_top = parseInt($('.top_page1.absolute_img').css('top'));
+
+				$('.top_page1.absolute_img').css({
+					'top' : img1_top_position ,
+					'height':  list_height + 160,
+					'transform': 'translateY(20px)'
+				});
+
+				var img3_bottom = $('.links .link_title').height() / 2 ;
+				var img4_top = $('.links').outerHeight(true) ;
+
+				$('.top_page1.absolute_img').height(list_height + 20);
+				//	$('.top_page2.absolute_img').css('top',list_height + img1_top - 100);
+
+				$('.top_page3.absolute_img').css({
+					'top': list_height + img1_top + 300,
+					'bottom':  img4_top - img3_bottom
+				});
+
+			} else{
+
+				$('.top_page1.absolute_img').css({
+					'top' : img1_top_position ,
+					'height':  list_height + 80
+				});
+				
+				//$('.top_page1.absolute_img').removeAttr('style');
+				 $('.top_page2.absolute_img').removeAttr('style');
+				$('.top_page3.absolute_img').removeAttr('style');
+
+
+			}
+		}
+		img_resize();
+
+		$(window).on('load resize', function() {
+			img_resize();
+		});
+
+
+		var type = $('.topic_type');
+		hide_empty(type,false);
+	});
+
+</script>
+	</head>
+	<body class="en eng">
+		<div id="wholewrapper" class="wholewrapper">
+			<header class="eng">
+	<div class="header_inner">
+		<a href="index.html">
+			<div class="header_logo">
+				<div class="pc"><img src="../media/images/common/header_logo.png"></div>
+				<div class="sp"><a href="index.html"><img src="../media/images/common/header_logo_sp.svg"></a></div>
+			</div>
+		</a>
+		<div class="sp">
+				<div class="hamburger sp" id="js-hamburger">
+					<span class="hamburger__line hamburger__line1"></span>
+					<span class="hamburger__line hamburger__line2"></span>
+				</div>
+			</div>
+		<nav>
+			<div class="gl_nav pc">
+
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm11  first "><a href="index.html" class="" >Home</a></li><li class="type1 depth1 lm12   has_children"><a href="message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Message</a><ul class="depth2"><li class="type1 depth2 lm71  first "><a href="message/202303/index.html" >March 2023</a></li><li class="type1 depth2 lm72  last "><a href="message/202103/index.html" >March 2021</a></li></ul></li><li class="type1 depth1 lm13   has_children"><a href="project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Project</a><ul class="depth2"><li class="type1 depth2 lm20  first "><a href="project/project_summary.html" >Mission of the Project</a></li><li class="type1 depth2 lm21   "><a href="project/group_a01/index.html" >group A01</a></li><li class="type1 depth2 lm22   "><a href="project/group_b01/index.html" >group B01</a></li><li class="type1 depth2 lm23  last "><a href="project/group_c01/index.html" >group C01</a></li></ul></li><li class="type1 depth1 lm14   has_children"><a href="report/information/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Activities</a><ul class="depth2"><li class="type1 depth2 lm30  first "><a href="report/information/index.html" >Topics</a></li><li class="type1 depth2 lm28  last "><a href="report/past-event/index.html" >Events Records</a></li></ul></li><li class="type1 depth1 lm63  last has_children"><a href="report/achievements/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Achievements</a><ul class="depth2"><li class="type3 depth2 lm64  first "><a href="report/achievements/index.html" class="" >Publications &amp; Awards</a></li><li class="type3 depth2 lm68   "><a href="report/information/detail/---id-254.html" class="" >Industry-Academia Research</a></li><li class="type3 depth2 lm78  last "><a href="report/information/detail/---id-504.html" class="" >Research Materials</a></li></ul></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+
+				<div class="language">
+					<a href="../index.html">JP</a>／EN
+				</div>
+			</div>
+		</nav>
+	</div>
+	<nav>
+		<div class="gl_nav sp" id="sp_nav">
+
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm11  first "><a href="index.html" class="" >Home</a></li><li class="type1 depth1 lm12   has_children"><a href="message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Message</a><ul class="depth2"><li class="type1 depth2 lm71  first "><a href="message/202303/index.html" >March 2023</a></li><li class="type1 depth2 lm72  last "><a href="message/202103/index.html" >March 2021</a></li></ul></li><li class="type1 depth1 lm13   has_children"><a href="project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Project</a><ul class="depth2"><li class="type1 depth2 lm20  first "><a href="project/project_summary.html" >Mission of the Project</a></li><li class="type1 depth2 lm21   "><a href="project/group_a01/index.html" >group A01</a></li><li class="type1 depth2 lm22   "><a href="project/group_b01/index.html" >group B01</a></li><li class="type1 depth2 lm23  last "><a href="project/group_c01/index.html" >group C01</a></li></ul></li><li class="type1 depth1 lm14   has_children"><a href="report/information/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Activities</a><ul class="depth2"><li class="type1 depth2 lm30  first "><a href="report/information/index.html" >Topics</a></li><li class="type1 depth2 lm28  last "><a href="report/past-event/index.html" >Events Records</a></li></ul></li><li class="type1 depth1 lm63  last has_children"><a href="report/achievements/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Achievements</a><ul class="depth2"><li class="type3 depth2 lm64  first "><a href="report/achievements/index.html" class="" >Publications &amp; Awards</a></li><li class="type3 depth2 lm68   "><a href="report/information/detail/---id-254.html" class="" >Industry-Academia Research</a></li><li class="type3 depth2 lm78  last "><a href="report/information/detail/---id-504.html" class="" >Research Materials</a></li></ul></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+
+				<div class="language eng">
+					<a href="https://core.dais.is.tohoku.ac.jp/test-x/">JP</a>／EN
+				</div>
+			</div>	
+	</nav>
+</header>
+			<main id="main" class="main"><div>
+	<div class="main_visual">
+		<div class="text_img">
+			<img alt="" class="pc" src="../media/images/top/text_eng.svg" /> <img alt="" class="sp" src="../media/images/top/text_eng_sp.svg" />
+			<p>KAKENHI Grant-in-Aid for Transformative Research Areas (B) FY2020-FY2022</p>
+		</div>
+	</div>
+
+	<div class="main_visual_img absolute_img">
+		<img alt="mein_visual" class="pc" src="../media/images/top/main_visual.jpg" /> <img alt="mein_visual" class="sp" src="../media/images/top/main_visual_sp.jpg" />
+	</div>
+
+	<div class="top_page1 absolute_img">
+		&nbsp;
+	</div>
+
+	<div class="top_page2 absolute_img">
+		&nbsp;
+	</div>
+
+	<div class="top_page3 absolute_img">
+		&nbsp;
+	</div>
+
+	<div class="top_page4 absolute_img">
+		&nbsp;
+	</div>
+
+	<div class="list_block">
+		<div class="list">
+			<div class="list_title">
+				<h2 class="eng">Information</h2>
+				<a href="report/information/index.html"><img class="pc" src="../media/images/top/list.svg" /><img class="sp" src="../media/images/top/list_sp.svg" />more</a> <!--<div class="slash">
+					&nbsp;
+				</div>-->
+			</div>
+			<ul class="info" id="information"><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-504.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2024.02.26
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">Information</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary eng">
+					Research Materials from the Project	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="" data-tag=""></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="report/past-event/detail/---id-174.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2023.06.13
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">Information</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary eng">
+					Program has been announced, Workshop on Combinatorial Reconfiguration affiliated with ICALP 2023	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="41,16" data-tag="FY2023,News"></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="https://core-challenge.github.io/2023/" target=&quot;_blank&quot;>
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2023.01.10
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">Information</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary eng">
+					We organize the programming competition &quot;The 2nd Combinatorial Reconfiguration Challenge (CoRe Challenge 2023)&quot;	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="39,16" data-tag="FY2022,News"></ul>
+		</div>
+	</div>
+</li><li>
+
+	<div class="list_col">
+		<a href="report/information/detail/---id-254.html" >
+			<div class="list_col_wrap">
+
+				<div class="topic_date eng">
+					2022.12.05
+				</div>
+
+				<!--<div class="topic_type">			
+ <span class="ja">Information</span>
+ <span class="en">information</span>
+   </div>-->
+
+				<div class="topic_summary eng">
+					[Research News] Development of Algorithm to Calculate Shortest Procedure for Power Restoration -- Applicable to Multi-Stage Power Restoration, with Application Expected in Distribution System Operations on Wider Areas	
+				</div>
+
+			</div>
+		</a> 
+		<div class="item_tags">
+			<ul class="tags_list" data-tag_id="39,16" data-tag="FY2022,News"></ul>
+		</div>
+	</div>
+</li></ul>
+		</div>
+	</div>
+
+	<div>
+		<div class="project semi_inner">
+			<div class="title">
+				<h2 class="eng">Project</h2>
+			</div>
+
+			<div class="sub_title">
+				<h3>Fusion of Computer Science,<br class="sp" />
+				Engineering and Mathematics Approaches<br class="sp" />
+				for Expanding Combinatorial Reconfiguration</h3>
+			</div>
+
+			<div class="description_block">
+				<div>
+					<div class="description_text">
+						The final goal of this research project is to provide a common infrastructure for utilizing and applying the algorithmic technology of combinatorial reconfiguration. Toward this goal, computer scientists, engineers, and mathematicians work cooperatively, aim at establishing the algorithmic foundation, the implementation technology foundation, and the mathematical foundation of combinatorial reconfiguration.
+					</div>
+					<a href="project/project_summary.html">
+					<div class="description_link">
+						<div class="link_block">
+							<img src="../media/images/top/arrow_right_w.svg" />
+						</div>
+
+						<div class="link_text">
+							Project Outline
+						</div>
+					</div>
+					</a>
+				</div>
+
+				<div class="description_img">
+					<img src="../media/images/top/image.jpg" />
+				</div>
+			</div>
+			<ul class="group_summary">
+
+	<li class="group group_a">
+		<a href="project/group_a01/index.html">
+			<div class="group_head">
+				<div>
+					<div class="group_text eng">group</div>
+
+					<div class="group_num eng ">A01</div>
+				</div>
+
+				<div class="group_line">&nbsp;</div>
+			</div>
+
+			<div class="group_about">
+				<p>Computer Science Approach for Expanding Combinatorial Reconfiguration</p>
+
+				<p>Toward Automatic Generation of Algorithms</p>
+			</div>
+
+			<div>
+				<div class="link_block"><img src="../media/images/top/arrow_right_w.svg" /></div>
+
+
+				<div class="group_icon"><img src="../media/images/top/noun_computer%20science_2475084.svg" /></div>
+			</div>
+		</a>
+	</li>
+	<li class="group group_b">
+		<a href="project/group_b01/index.html">
+			<div class="group_head">
+				<div>
+					<div class="group_text eng">group</div>
+
+					<div class="group_num eng">B01</div>
+				</div>
+
+				<div class="group_line">&nbsp;</div>
+			</div>
+
+			<div class="group_about">
+				<p>Engineering Approach for Expanding Combinatorial Reconfiguration</p>
+
+				<p>Toward a General-Purpose Solver Using Power Distribution Systems as a Steppingstone</p>
+			</div>
+
+
+			<div>
+				<div class="link_block"><img src="../media/images/top/arrow_right_w.svg" /></div>
+
+
+				<div class="group_icon"><img src="../media/images/top/noun_Big%20data_2486352.svg" /></div>
+			</div>
+		</a>
+	</li>
+	<li class="group group_c">
+		<a href="project/group_c01/index.html">
+			<div class="group_head">
+				<div>
+					<div class="group_text eng">group</div>
+
+					<div class="group_num eng">C01</div>
+				</div>
+
+				<div class="group_line">&nbsp;</div>
+			</div>
+
+			<div class="group_about">
+				<p>Mathematics Approach for Expanding Combinatorial Reconfiguration</p>
+
+				<p>Toward New Methods Based on Case Studies</p>
+			</div>
+			<div>
+				<div class="link_block"><img src="../media/images/top/arrow_right_w.svg" /></div>
+				<div class="group_icon"><img src="../media/images/top/noun_mathematics_2475103.svg" /></div>
+			</div>
+		</a>
+	</li>
+</ul>
+
+		</div>
+	</div>
+
+	<div class="links inner">
+		<div class="link_title">
+			<h2 class="eng">Links</h2>
+		</div>
+
+		<ul class="link_list">
+			<li><a href="https://www.mext.go.jp/en/policy/science_technology/" target="_blank">
+			<div>
+				MEXT
+			</div>
+			</a></li>
+			<li><a href="https://www.jsps.go.jp/english/e-grants/" target="_blank">
+			<div>
+				JSPS
+			</div>
+			</a></li>
+			<li><a href="http://www.ecei.tohoku.ac.jp/alg/core/" target="_blank">
+			<div>
+				CoRe Portal
+			</div>
+			</a></li>
+			<li><a href="http://www.ecei.tohoku.ac.jp/alg/core/" target="_blank">
+			<div>
+				CoRe Web Survey
+			</div>
+			</a></li>
+		</ul>
+	</div>
+</div>
+</main>
+			<footer class="eng">
+	<div>
+		<div class="logo_contact">
+			<div class="footer_logo">
+				<img src="../media/images/common/footer_logo.svg">
+			</div>
+			<div class="contact">
+				<div>
+					KAKENHI Grant-in-Aid for Transformative Research Areas (B)
+				</div>
+				<div class="contact_mail">
+					<a href="../index.html#" data-host="grp.tohoku.ac.jp" data-account="core.info" class="icon_mail">@</a>
+				</div>
+			</div>
+		</div>
+		<div class="fotter-menu pc">
+
+			<div>
+				<h5><a href="index.html">Home</a></h5>
+			</div>
+			<div>
+				<h5><a href="message/202303/index.html">Message</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm71  first "><a href="message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">March 2023</a></li><li class="type1 depth1 lm72  last "><a href="message/202103/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">March 2021</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="project/project_summary.html">Project</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm20  first "><a href="project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Mission of the Project</a></li><li class="type1 depth1 lm21   "><a href="project/group_a01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">group A01</a></li><li class="type1 depth1 lm22   "><a href="project/group_b01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">group B01</a></li><li class="type1 depth1 lm23  last "><a href="project/group_c01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">group C01</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="report/information/index.html">Activities</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm30  first "><a href="report/information/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Topics</a></li><li class="type1 depth1 lm28  last "><a href="report/past-event/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Events Records</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="report/achievements/index.html">Achievements</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm64  first "><a href="report/achievements/index.html" class="" >Publications &amp; Awards</a></li><li class="type3 depth1 lm68   "><a href="report/information/detail/---id-254.html" class="" >Industry-Academia Research</a></li><li class="type3 depth1 lm78  last "><a href="report/information/detail/---id-504.html" class="" >Research Materials</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+	
+			
+		</div>
+	</div>
+	<a class="twitter link_button" href="https://twitter.com/comb_reconf" target="_blank">
+		<div>
+			<img src="../media/images/common/Twitter.svg" alt="Page_Top">
+		</div>
+	</a>
+	<a id="top" class="top link_button" href="../index.html#wholewrapper">
+		<div>
+			<img src="../media/images/common/Page_Top.svg" alt="Page_Top">
+		</div>
+	</a>
+</footer>
+<!-- core -->
+		</div>
+	<div class="nocache" style="display:none;">no cache</div></body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>【共同プレスリリース】停電復旧の最短手順を算出するアルゴリズムを開発 ー多段融通にも対応、より広域な配電運用への活用に期待ー| 組合せ遷移＠学術変革領域研究(B)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<base href="">
+		<link href="../../../css/Reset.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://core.dais.is.tohoku.ac.jp/assets/font-awesome/css/font-awesome.min.css">
+<style>
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap"  type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&display=swap" type="text/css" rel="stylesheet">
+<link href="../../../css/common.css" type="text/css" rel="stylesheet">
+<link href="../../../css/lower.css" type="text/css" rel="stylesheet">
+<style>
+
+</style><link href="../../../css/information_event_list.css" type="text/css" rel="stylesheet">
+<style>
+
+</style>
+		<script src="../../../assets/jquery.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0YEDEBEPL"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-J0YEDEBEPL');
+</script>
+	</head>
+	<body class="report detail topics">
+		<div id="wholewrapper" class="wholewrapper">
+			<header>
+	<div class="header_inner">
+		<a href="../../../index.html">
+			<div class="header_logo">
+				<div class="pc"><img src="../../../media/images/common/header_logo.png"></div>
+				<div class="sp"><a href="../../../index.html"><img src="../../../media/images/common/header_logo_sp.svg"></a></div>
+			</div>
+		</a>
+		<div class="sp">
+				<div class="hamburger sp" id="js-hamburger">
+					<span class="hamburger__line hamburger__line1"></span>
+					<span class="hamburger__line hamburger__line2"></span>
+				</div>
+			</div>
+		<nav>
+			<div class="gl_nav pc">
+
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm2  first "><a href="../../../index.html" class="" >HOME</a></li><li class="type1 depth1 lm3   has_children"><a href="../../../message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">代表挨拶</a><ul class="depth2"><li class="type1 depth2 lm70  first "><a href="../../../message/202303/index.html" >2023年3月</a></li><li class="type1 depth2 lm69  last "><a href="../../../message/202103/index.html" >2021年3月</a></li></ul></li><li class="type1 depth1 lm4   has_children"><a href="../../../project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">プロジェクト</a><ul class="depth2"><li class="type1 depth2 lm6  first "><a href="../../../project/project_summary.html" >研究プロジェクト概要</a></li><li class="type1 depth2 lm7   "><a href="../../../project/project_a01/index.html" >A01班</a></li><li class="type1 depth2 lm8   "><a href="../../../project/project_b01/index.html" >B01班</a></li><li class="type1 depth2 lm9  last "><a href="../../../project/project_c01/index.html" >C01班</a></li></ul></li><li class="type1 depth1 lm5 active  has_children"><a href="../../information.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">活動情報</a><ul class="depth2"><li class="type1 depth2 lm18 active first "><a href="../../information.html" >トピックス</a></li><li class="type1 depth2 lm16   "><a href="../../past-event/index.html" >イベントの記録</a></li><li class="type1 depth2 lm51  last "><a href="../../newsletter/index.html" >ニュースレター</a></li></ul></li><li class="type1 depth1 lm53  last has_children"><a href="---id-500.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">主な成果</a><ul class="depth2"><li class="type3 depth2 lm54  first "><a href="---id-500.html" class="" >最終報告書</a></li><li class="type3 depth2 lm56   "><a href="../../achievements/index.html" class="" >論文・受賞</a></li><li class="type3 depth2 lm57   "><a href="---id-251.html" class="" >産学連携研究</a></li><li class="type3 depth2 lm77  last "><a href="---id-501.html" class="" >研究用コンテンツ</a></li></ul></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+
+				<div class="language eng">
+					JP／<a href="../../../en/index.html">EN</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<nav>
+		<div class="gl_nav sp" id="sp_nav">
+
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm2  first "><a href="../../../index.html" class="" >HOME</a></li><li class="type1 depth1 lm3   has_children"><a href="../../../message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">代表挨拶</a><ul class="depth2"><li class="type1 depth2 lm70  first "><a href="../../../message/202303/index.html" >2023年3月</a></li><li class="type1 depth2 lm69  last "><a href="../../../message/202103/index.html" >2021年3月</a></li></ul></li><li class="type1 depth1 lm4   has_children"><a href="../../../project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">プロジェクト</a><ul class="depth2"><li class="type1 depth2 lm6  first "><a href="../../../project/project_summary.html" >研究プロジェクト概要</a></li><li class="type1 depth2 lm7   "><a href="../../../project/project_a01/index.html" >A01班</a></li><li class="type1 depth2 lm8   "><a href="../../../project/project_b01/index.html" >B01班</a></li><li class="type1 depth2 lm9  last "><a href="../../../project/project_c01/index.html" >C01班</a></li></ul></li><li class="type1 depth1 lm5 active  has_children"><a href="../../information.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">活動情報</a><ul class="depth2"><li class="type1 depth2 lm18 active first "><a href="../../information.html" >トピックス</a></li><li class="type1 depth2 lm16   "><a href="../../past-event/index.html" >イベントの記録</a></li><li class="type1 depth2 lm51  last "><a href="../../newsletter/index.html" >ニュースレター</a></li></ul></li><li class="type1 depth1 lm53  last has_children"><a href="---id-500.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">主な成果</a><ul class="depth2"><li class="type3 depth2 lm54  first "><a href="---id-500.html" class="" >最終報告書</a></li><li class="type3 depth2 lm56   "><a href="../../achievements/index.html" class="" >論文・受賞</a></li><li class="type3 depth2 lm57   "><a href="---id-251.html" class="" >産学連携研究</a></li><li class="type3 depth2 lm77  last "><a href="---id-501.html" class="" >研究用コンテンツ</a></li></ul></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+
+				<div class="language eng">
+					JP／<a href="../../../en/index.html">EN</a>
+				</div>
+			</div>	
+	</nav>
+</header>
+
+			<section class="main_wrap">
+				<section class="page_title">
+					<div class="page_title_inner">
+						<div class="page_title_navigation"><span>活動情報</span></div>
+						<h2 class= "page_title_main">トピックス</h2>
+					</div>
+				</section>
+				<div class="contents_wrap">
+					<div class="main_inner width_">
+						<main id="main" class="main ">
+							<section class="event_detail">
+<div class="base_wh acc_slash">
+	<article class="event_detail_inner">
+	<h3 class="title--h3">【共同プレスリリース】停電復旧の最短手順を算出するアルゴリズムを開発 ー多段融通にも対応、より広域な配電運用への活用に期待ー</h3>
+
+	<table class="table event_table">
+		<tbody>
+			<tr class="event_contents">
+				<th>&nbsp;</th>
+				<td><div>東北大学，京都大学，中部大学，(株)明電舎による共同プレスリリースとして，本研究領域の産学連携・研究成果を発表しました． (特許共同出願中)．本研究領域から下記４名が研究に取り組んでまいりました．</div>
+
+<div style="margin-left: 40px;"><a href="http://www.dais.is.tohoku.ac.jp/take/index-j.html" target="_blank">伊藤 健洋</a>（東北大学，領域代表 兼 A01班代表）</div>
+
+<div style="margin-left: 40px;"><a href="https://www.algo.cce.i.kyoto-u.ac.jp/jkawahara/" target="_blank">川原 純</a>（京都大学，B01班代表）</div>
+
+<div style="margin-left: 40px;"><a href="http://www.ecei.tohoku.ac.jp/alg/suzuki/index-j.html" target="_blank">鈴木 顕</a>（東北大学，B01班）</div>
+
+<div style="margin-left: 40px;"><a href="https://iioka-daisuke.jimdofree.com/" target="_blank">飯岡 大輔</a>（中部大学，B01班）</div>
+
+<div style="margin-left: 40px;">&nbsp;</div>
+
+<ul style="margin-left: 40px;">
+</ul>
+
+<div><strong>【発表のポイント】</strong></div>
+
+<div>
+<ul>
+	<li style="margin-left: 40px;">停電発生時、周辺の供給余力を用いて早期に停電復旧するために、供給経路の切替手順を算出するアルゴリズム（計算手法）を開発。切替手順の最短性を理論保証。</li>
+	<li style="margin-left: 40px;">隣接する供給源の余力では足りず、離れた供給源の余力も活用する多段融通が必要な規模の停電であっても、アルゴリズムを適用可能。</li>
+	<li style="margin-left: 40px;">激甚災害に伴う大規模停電、ライフスタイル変容に伴う需要密度の変化など、より広域で高度な配電運用が求められる中で、系統事故時の自動復旧、系統混雑の解消、設備容量スリム化の計画業務など様々な場面へのアルゴリズムの活用が期待される。</li>
+</ul>
+
+<div style="margin-left: 40px;">&nbsp;</div>
+
+<div><strong>【概要】</strong><br />
+　停電発生時、事故や故障が生じていない停電区間は、周辺の供給余力を用いて早期に停電復旧できることがあります。しかし、隣接する供給源の余力では賄いきれない規模の停電が発生した場合には、離れた供給源の余力も活用しなければなりません。これは多段融通と呼ばれ、停電が発生していない健全な需要区間にも供給経路の変更が生じる復旧方法です（図１参照）。多段融通では、制御対象となる配電系統は広域となり、加えて健全な需要区間も制御対象となるため、配電運用には困難を伴います。<br />
+　この問題を解決するため、東北大学大学院情報科学研究科の伊藤健洋教授と鈴木顕准教授、京都大学大学院情報学研究科の川原純准教授、中部大学工学部の飯岡大輔准教授、株式会社明電舎による研究チームは、科学研究費助成事業 学術変革領域研究（Ｂ）「組合せ遷移」（＊１）を契機として２０２０年より共同研究を開始し、停電復旧の最短手順を算出するアルゴリズムを開発しました。（特許共同出願中）。<br />
+　本研究のアルゴリズムは、停電復旧に多段融通が必要か否かを判定し、いずれの場合にも、停電復旧を実行するための最短の切替手順を算出します。本研究では「組合せ遷移」と呼ばれる新しいアルゴリズム手法を用いることで、健全な需要区間への電力供給を持続しながら、停電復旧への最短の切替手順を算出することを可能としました。さらに本アルゴリズムを用いることで、多段融通の必要性および切替手順の最短性が理論保証されるため、数理的エビデンスを伴った停電復旧を可能とします。主にアルゴリズムの研究は東北大学と京都大学が行い、電力系統技術分野の研究は中部大学と明電舎が行いました。<br />
+　激甚災害に伴う大規模停電やライフスタイル変容に伴う需要密度の変化など、可用性を担保しながら、より広域な配電系統を制御することが現代社会では求められています。本研究のアルゴリズムは、このような要請に応え、系統事故時の自動復旧や系統混雑の解消、設備容量スリム化の計画業務など、より高度な配電運用へ活用されていくことが期待されます。</div>
+
+<div>&nbsp;</div>
+
+<div><img src="../../../media/images/_u/topic/pic1/d7levas3y.png" /></div>
+
+<div>図１　本研究の成果および多段融通の概念。<br />
+緑色と青色の供給源の余力を合わせても停電復旧には足りないが、健全な需要区間を黄色の供給源に切り替えることで、停電復旧を実行している。<br />
+&nbsp;</div>
+
+<div>（＊１） 本研究において、東北大学、京都大学、中部大学の研究者らは、下記の助成を受けています。（課題番号： JP20H05793、JP20H05794）<br />
+科学研究費助成事業 学術変革領域研究（Ｂ）<br />
+「組合せ遷移の展開に向けた計算機科学・工学・数学によるアプローチの融合」<br />
+領域代表および計画研究Ａ０１班代表 伊藤健洋 （東北大学）<br />
+計画研究Ｂ０１班代表 川原純 （京都大学）<br />
+<a href="../../../index.html">https://core.dais.is.tohoku.ac.jp/</a><br />
+&nbsp;</div>
+
+<div><a href="../../../media/files/_u/topic/file1/1f78jtrvz1.pdf" target="_blank">詳細（プレスリリース全文）はこちら</a></div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>
+<ul style="margin-left: 40px;">
+	<li><a href="https://www.tohoku.ac.jp/japanese/2022/11/press20221107-03-blackout.html" target="_blank">東北大学のプレスリリースページ</a></li>
+	<li><a href="https://www.kyoto-u.ac.jp/ja/research-news/2022-11-15" target="_blank">京都大学のプレスリリースページ</a></li>
+	<li><a href="https://www.chubu.ac.jp/news/10199/" target="_blank">中部大学のプレスリリースページ</a></li>
+	<li><a href="https://www.meidensha.co.jp/news/news_03/news_03_01/1240965_2469.html" target="_blank">(株)明電舎のプレスリリースページ</a></li>
+</ul>
+</div>
+</div>
+</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div>
+		&nbsp;
+	</div>
+
+	<div class="event_tag">
+		<ul class="">
+            <li>
+                            <a href="../tags/---tag-27.html">2022年度</a>
+                    </li>
+            <li>
+                            <a href="../tags/---tag-24.html">A01</a>
+                    </li>
+            <li>
+                            <a href="../tags/---tag-26.html">B01</a>
+                    </li>
+            <li>
+                            <a href="../tags/---tag-15.html">お知らせ</a>
+                    </li>
+    </ul>
+
+	</div>
+	</article>
+
+	<div class="button--wh rev">
+		<a href="../../information.html">戻る</a>
+	</div>
+</div>
+</section>
+
+<div style="display: none">
+	
+</div>
+
+						</main>
+					</div>
+				</div>
+			</section>
+			<nav class="localnavi">
+				<div class="localnavi_inner">
+					<!--Qrt\Plugin\LocalNavigation::loadPlugin--><h2 class="top_title"><a href="../../information.html">活動情報</a></h2><ul class="depth1"><li class="type1 depth1 lm18 active first "><a href="../../information.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">トピックス</a></li><li class="type1 depth1 lm16   "><a href="../../past-event/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">イベントの記録</a></li><li class="type1 depth1 lm51  last "><a href="../../newsletter/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">ニュースレター</a></li></ul><!--/Qrt\Plugin\LocalNavigation::loadPlugin-->
+				</div>
+			</nav>
+			<footer>
+	<div class="footer_inner">
+		<div class="logo_contact">
+			<div class="footer_logo">
+				<img src="../../../media/images/common/footer_logo.svg">
+			</div>
+			<div class="contact">
+				<div class="footer_name">
+					組合せ遷移＠学術変革領域研究(B) 
+				</div>
+				<div class="contact_mail">
+					<a href="../../../index.html#" data-host="grp.tohoku.ac.jp" data-account="core.info" class="icon_mail">@</a>
+				</div>
+			</div>
+		</div>
+		<div class="fotter-menu pc">
+
+			<div>
+				<h5><a href="../../../index.html">HOME</a></h5>
+			</div>
+			<div>
+				<h5><a href="../../../message/202303/index.html">代表挨拶</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm70  first "><a href="../../../message/202303/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">2023年3月</a></li><li class="type1 depth1 lm69  last "><a href="../../../message/202103/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">2021年3月</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="../../../project/project_summary.html">プロジェクト</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm6  first "><a href="../../../project/project_summary.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">研究プロジェクト概要</a></li><li class="type1 depth1 lm7   "><a href="../../../project/project_a01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">A01班</a></li><li class="type1 depth1 lm8   "><a href="../../../project/project_b01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">B01班</a></li><li class="type1 depth1 lm9  last "><a href="../../../project/project_c01/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">C01班</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="../../information.html">活動情報</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type1 depth1 lm18 active first "><a href="../../information.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">トピックス</a></li><li class="type1 depth1 lm16   "><a href="../../past-event/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">イベントの記録</a></li><li class="type1 depth1 lm51  last "><a href="../../newsletter/index.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">ニュースレター</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+			<div>
+				<h5><a href="---id-500.html">主な成果</a></h5>
+				<!--Qrt\Plugin\GlobalNavigation::loadPlugin--><ul class="depth1"><li class="type3 depth1 lm54  first "><a href="---id-500.html" class="" >最終報告書</a></li><li class="type3 depth1 lm56   "><a href="../../achievements/index.html" class="" >論文・受賞</a></li><li class="type3 depth1 lm57   "><a href="---id-251.html" class="" >産学連携研究</a></li><li class="type3 depth1 lm77  last "><a href="---id-501.html" class="" >研究用コンテンツ</a></li></ul><!--/Qrt\Plugin\GlobalNavigation::loadPlugin-->
+			</div>
+
+			
+		</div>
+	</div>
+	<a class="twitter link_button" href="https://twitter.com/comb_reconf" target="_blank">
+		<div>
+			<img src="../../../media/images/common/Twitter.svg" alt="Page_Top">
+		</div>
+	</a>
+	<a id="top" class="top link_button" href="../../../index.html#wholewrapper">
+		<div>
+			<img src="../../../media/images/common/Page_Top.svg" alt="Page_Top">
+		</div>
+	</a>
+</footer>
+		</div>
+	<div class="nocache" style="display:none;">no cache</div></body>
+	<script type="text/javascript" src="../../../js/common.js"></script>
+<script type="text/javascript" src="../../../js/tag.js"></script><script>
+	$(function(){
+		$('#main .event_table tr:has(td:empty)').hide();
+	});
+</script>
+</html>
